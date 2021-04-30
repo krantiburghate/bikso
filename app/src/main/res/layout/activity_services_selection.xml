@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServicesSelection">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="@string/activity_services_selection_textview_text"
+        android:id="@+id/select_service"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="25sp"
+        android:id="@+id/cb"
+        android:layout_below="@+id/select_service"
+        android:text="@string/activity_services_selection_checkbox_text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="25sp"
+        android:id="@+id/cb1"
+        android:layout_below="@+id/cb"
+        android:text="@string/activity_services_selection_checkbox2_text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="25sp"
+        android:id="@+id/cb2"
+        android:layout_below="@id/cb1"
+        android:text="@string/activity_services_selection_checkbox3_text"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="25sp"
+        android:id="@+id/cb3"
+        android:layout_below="@id/cb2"
+        android:text="@string/activity_services_selection_checkbox4_text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:id="@+id/others"
+        android:layout_below="@id/cb3"
+        android:visibility="gone"
+        android:hint="@string/activity_services_selection_edittext_hint"
+        android:inputType="textCapSentences"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/activity_services_selection_button_text"
+        android:id="@+id/book_time"/>
+
+</RelativeLayout>

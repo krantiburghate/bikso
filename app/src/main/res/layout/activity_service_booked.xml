@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceBooked">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pb"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/animated_check"
+        android:id="@+id/success"
+        android:visibility="gone"
+        android:contentDescription="@string/activity_service_booked_imageview_contentdescription"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/success"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/tv"
+        android:visibility="gone"
+        android:text="@string/activity_service_booked_textview_text"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/tv1"
+        android:visibility="gone"
+        android:text="@string/activity_service_booked_textview2_text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv1"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv2"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv3"
+        android:text="@string/activity_service_booked_textview4_text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv3"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv4"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv5"
+        android:text="@string/activity_service_booked_textview6_text"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv5"
+        android:layout_below="@id/tv4"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/tv6"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv6"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/ll1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn"
+            android:text="@string/activity_service_booked_linearlayout_button_text"
+            tools:ignore="ButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:text="@string/activity_service_booked_linearlayout_button1_text"
+            tools:ignore="ButtonStyle"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2"
+        android:text="@string/activity_service_booked_button_text"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll1"/>
+
+</RelativeLayout>
